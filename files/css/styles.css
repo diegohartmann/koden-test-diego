@@ -133,9 +133,36 @@ section.differs{
 section.differs > iframe{
     display: block;
     position: absolute;
-    position: absolute;
-    top: 2%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    --transform-data: translate(-50%, -33.3%);
+            transform: var(--transform-data);
+         -o-transform: var(--transform-data);
+    -webkit-transform: var(--transform-data);
+}
+section.differs > h2{
+    text-align: center;
+    color:white;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+section.differs > div.diff-items{
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 81.5%;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between
+}
+section.differs > div.diff-items > div.item-single{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 40px;
+    color: white;
+    font-size: 13px;
+}
+section.differs > div.diff-items > div.item-single > img{
+    margin-right: 10px;
 }
