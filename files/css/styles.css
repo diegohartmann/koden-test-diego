@@ -17,16 +17,19 @@
 }
 
 .greenButton{
+    border:none;
     border-radius: 8px;
     color: white;
     text-decoration: none;
-    height: 68px;
-    line-height: 68px;
+    height: 60px;
     width: 430px;
+    font-size: 18px;
     text-align: center;
     align-content: center;
     background-color: var(--myGreen);
+    cursor: pointer;
 }
+
 .joinButton{
     background-color: white;
     border-radius: 8px;
@@ -38,7 +41,9 @@
     text-align: center;
     font-size: var(--headerFontSize);
     margin-left: 4px;
+    cursor: pointer;
 }
+
 .em-andamento-tooltip{
     pointer-events: none; 
     z-index: 999;
@@ -61,11 +66,10 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 90px;
-    width: 100vw;
     max-width: 1920px;
     align-items: center;
-    border: 2px solid black;
     padding: 0 2%;
+    margin: 0 auto;
 }
 header > img.header-logo{
     margin-top: 10px;
@@ -93,4 +97,35 @@ header > .nav-container nav ul li a{
     font-size: var(--headerFontSize);
     color: var(--myBlueOil);
     text-decoration: none;
+}
+section.home{
+    height: 745px;
+    background-color: white;
+}
+section.home > .home-content{
+    padding-top: 30px;
+    margin: 0 auto;
+    /* height: 100%; */
+    width: 31%;
+    text-align: center;
+}
+section.home > .home-content  h2{
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--myBlueOil);
+}
+section.home > .home-content p{
+    font-weight: 400;
+    color: var(--myBlueOil);
+    /* padding: 0 15px; */
+    width: 95%;
+    font-size: 17px;
+}
+section.home input{
+    display: block;
+    margin: 0 auto; 
+}
+section.differs{
+    height: 940px;
+    background-color: var(--myPurple);
 }
