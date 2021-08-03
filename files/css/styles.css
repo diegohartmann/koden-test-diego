@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+html, body{
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+:root{
+    /* ------- geral -- */
+    --myPurple: #8f4ffb;
+    --myGreen: #00cf89;
+    --myBlueOil: #344451;
+    --myBlueOilDark: #212a33;
+    /* ------- cores das border-top dos itens em 'afiliado' --- */
+    --oone:  #ac2fff;
+    --ttwo:  #04d700;
+    --tthree:#f70f58;
+    --ffour: #03c8ad;
+    --ffive: #03a3fb;
+    --ssix:  #fc33db;
+    --sseven:#04ea7d;
+    --eeight:#79d903;
+}
+.test{
+    width: 100%;
+    height: 800px;
+    background-color: red;
+}
