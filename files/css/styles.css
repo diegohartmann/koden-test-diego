@@ -1,5 +1,6 @@
 :root{
     /* ------- geral -- */
+    --font-size: 20px;
     --myPurple: #8f4ffb;
     --myGreen: #00cf89;
     --myBlueOil: #344451;
@@ -22,16 +23,21 @@
     height: 68px;
     line-height: 68px;
     width: 430px;
+    text-align: center;
+    align-content: center;
     background-color: var(--myGreen);
 }
 .joinButton{
     background-color: white;
-    border-radius: 5px;
-    border: 1px solid var(--myPurple);
+    border-radius: 8px;
+    border: 2px solid var(--myPurple);
     color: var(--myPurple);
     width: 217px;
     height: 44px;
-    line-height: 44px;
+    align-content: center;
+    text-align: center;
+    font-size: var(--headerFontSize);
+    margin-left: 4px;
 }
 .em-andamento-tooltip{
     pointer-events: none; 
@@ -51,23 +57,40 @@
     text-align: center;
 }
 header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 90px;
     width: 100vw;
     max-width: 1920px;
-    height: 90px;
-    background-color: red;
+    align-items: center;
+    border: 2px solid black;
+    padding: 0 2%;
 }
-header.header-logo{
-    float: right;
-    height: 70px;
-    width: 185px;
-    background-image: url('../assets/img/eumei-online.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+header > img.header-logo{
+    margin-top: 10px;
+    flex-shrink: 0;
+    width: 135px;
 }
-header.nav-container{
-    float: left;
+header > .nav-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     height: 70px;
-    background-color: blue;
-    width: 185px;
+    flex-shrink: 0;
+    width: auto;
+}
+header > .nav-container nav ul{
+    height: 100%;
+}
+header > .nav-container nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 8px;
+}
+header > .nav-container nav ul li a{
+    font-size: var(--headerFontSize);
+    color: var(--myBlueOil);
+    text-decoration: none;
 }
