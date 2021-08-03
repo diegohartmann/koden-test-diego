@@ -7,9 +7,8 @@ function Init(){
     const defaultColorCSS = 'white';
     const warningColorCSS = 'rgb(240, 240, 76)';
     const errorColorCSS = 'red';
-    
     _html.on("mouseenter", ".defaultTip", function() {
-        SeguirMouse();
+        SeguirMouse(tip);
         CSSEnter(tip, tipText, "Descricao sobre...", defaultColorCSS);
     });
     _html.on("mouseleave", ".defaultTip", function() {
@@ -18,15 +17,15 @@ function Init(){
     });
     
     _html.on("mouseenter", ".warningTip", function() {
-        SeguirMouse();
-        CSSEnter(tip, tipText, "Não é possível ler", warningColorCSS);
+        SeguirMouse(tip);
+        CSSEnter(tip, tipText, "Demostração", warningColorCSS);
     });
     _html.on("mouseleave", ".warningTip", function() {
         PararSeguirMouse();
         CSSExit(tip);
     });
     _html.on("mouseenter", ".errorTip", function() {
-        SeguirMouse();
+        SeguirMouse(tip);
         CSSEnter(tip, tipText, "Erro", errorColorCSS);
     });
     _html.on("mouseleave", ".errorTip", function() {
@@ -34,7 +33,6 @@ function Init(){
         CSSExit(tip);
     });
 }
-
 function CSSEnter(_tip, _tipText, _text, _color = defaultColorCSS){
     _tipText.html(_text);
     _tip.css('background-color', _color);

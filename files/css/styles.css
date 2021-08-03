@@ -35,7 +35,7 @@
     border-radius: 8px;
     border: 2px solid var(--myPurple);
     color: var(--myPurple);
-    width: 217px;
+    width: 180px;
     height: 44px;
     align-content: center;
     text-align: center;
@@ -66,7 +66,7 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 90px;
-    max-width: 1920px;
+    max-width: 1850px;
     align-items: center;
     padding: 0 2%;
     margin: 0 auto;
@@ -127,5 +127,15 @@ section.home input{
 }
 section.differs{
     height: 940px;
+    position: relative;
     background-color: var(--myPurple);
+}
+section.differs > iframe{
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
