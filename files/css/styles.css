@@ -150,19 +150,49 @@ section.differs > div.diff-items{
     width: 80vw;
     min-width: 81.5%;
     display: flex;
-    flex-shrink: 0;
     flex-wrap: wrap;
+    flex-shrink: 0;
     align-items: start;
     justify-content: space-between
 }
 section.differs > div.diff-items > div.item-single{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     width: 25%;
     height: 40px;
     color: white;
-    font-size: 13px;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
 }
 section.differs > div.diff-items > div.item-single > img{
     margin-right: 10px;
+}
+section.how-works{
+    height: 320px;
+    padding-top: 60px;
+}
+section.how-works > h2{
+    color: var(--myBlueOil);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+section > div.tuto{
+    height: 100%;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+}
+section > div.tuto > div.tuto-single{
+    padding: 8px;
+    float: left;
+    width: 33.3%;
+    display: flex;
+    align-items: start;
+    color: var(--myBlueOil);
+    font-size: 15px;
+}
+section > div.tuto > div.tuto-single > img{
+    margin-right: 8px;
 }
