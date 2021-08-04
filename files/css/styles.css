@@ -1,20 +1,10 @@
 :root{
-    /* ------- geral -- */
     --font-size: 20px;
     --myPurple: #8f4ffb;
     --myLightGray: #f0f1f3;
     --myGreen: #00cf89;
     --myBlueOil: #344451;
     --myBlueOilDark: #212a33;
-    /* ------- cores das border-top dos itens em 'afiliado' --- */
-    --oone:  #ac2fff;
-    --ttwo:  #04d700;
-    --tthree:#f70f58;
-    --ffour: #03c8ad;
-    --ffive: #03a3fb;
-    --ssix:  #fc33db;
-    --sseven:#04ea7d;
-    --eeight:#79d903;
 }
 .greenButton{
     border:none;
@@ -438,6 +428,9 @@ footer .bottom-footer img{
 #servicos-afiliado .servicos-two{
     background-color:var(--myLightGray);
     height: 1420px;
+}
+.servicos-two .{
+
 }
 
 #vantagens-afiliado{
