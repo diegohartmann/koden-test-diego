@@ -8,6 +8,7 @@
 	4. Criação do repositório e integração com git
 	5. Deploy no Vercel
 	6. Inclusão do jQuery
+	7. Criada a coleção de cores base na :root usando conta gotas nos layouts de exemplo
     
 	
 	
@@ -23,5 +24,6 @@
 		(04/08)
 		1.5 Finalização do footer da home;
 		1.6 Testei site em resolucao 1920 em :http://whatismyscreenresolution.net/;
+		1.7 media-queries para tela de notebook (1366px)
 	
 	2. Criação da pagina de afiliado
