@@ -257,22 +257,27 @@ section.planos{
 }
 .planos .planos-container{
     width: 80%;
+    display: block;
     margin: 0 auto;
 }
-.planos .planos-container .plano-single{
+.plano-single{
     width: 33.3%;
-    max-width: 350px;
     float: left;
     padding: 8px;
 }
+.plano-single .plano-single-container{
+    margin: 0 auto;
+    width: 300px;
+}
 .plano-box{
-    /* height: 215px; */
     padding: 13px;
     width: 100%;
+    max-width: 300px;
     background-color: white;
     margin-bottom: 20px;
 }
 .plano-box h2{
+    
     font-weight: bold;
     color: black;
     font-size: 15px;
@@ -301,7 +306,7 @@ section.planos{
     margin-bottom: 15px;
 }
 .plano-single ul li{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 35px;
 }

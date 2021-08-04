@@ -17,17 +17,19 @@ function appendPlan(_container, _planoSingle){
 }
 function getPlanoSingleHTML(_price, _about, _planNum, _getItemsHTML){
     return `<div class="plano-single">
-        <div class="plano-box">
-            <h2>Plano ${_planNum}</h2>
-            <h1>R$ ${_price},00</h1>
-            <p>${_about}</p>
-            <input type="submit" value="QUERO ESSE PLANO" class="greenButton">
-        </div>
-        <h3>Inclusos neste plano:</h3>
-        <ul style="list-style-type: none; color: white;">
-            ${_getItemsHTML}
-        </ul>
-    </div>`
+                <div class="plano-single-container">
+                    <div class="plano-box">
+                        <h2>Plano ${_planNum}</h2>
+                        <h1>R$ ${_price},00</h1>
+                        <p>${_about}</p>
+                        <input type="submit" value="QUERO ESSE PLANO" class="greenButton">
+                    </div>
+                    <h3>Inclusos neste plano:</h3>
+                    <ul style="list-style-type: none; color: white;">
+                        ${_getItemsHTML}
+                    </ul>
+                </div>
+            </div>`
 }
 function getItemsHTML(_items){
     let itemsHTML = '';
