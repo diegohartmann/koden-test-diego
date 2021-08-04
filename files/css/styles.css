@@ -15,7 +15,6 @@
     --sseven:#04ea7d;
     --eeight:#79d903;
 }
-
 .greenButton{
     border:none;
     border-radius: 5px;
@@ -35,12 +34,11 @@
     -webkit-transform: var(--transform-data);
          -o-transform: var(--transform-data);
             transform: var(--transform-data);
-    --filter-data: drop-shadow(1px 1px 2px #000000);
+    --filter-data: drop-shadow(1px 1px 1px #000000a1);
     -webkit-filter: var(--filter-data);
         -moz-filter:var(--filter-data);
             filter: var(--filter-data);
 }
-
 .joinButton{
     background-color: white;
     border-radius: 8px;
@@ -73,6 +71,7 @@
     text-align: center;
 }
 header{
+    background-color: white;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;

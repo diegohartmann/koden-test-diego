@@ -1,9 +1,6 @@
-$(document).ready(Init());
-
-
-function Init(){
+$(document).ready(function (){
     LoadItems(`${window.location.href}/js/jsons/planos.json`);
-}
+});
 function LoadItems (_jsonPath) {
     const itemsContainer = $('.planos-container');
     $.getJSON(_jsonPath, function(data){
@@ -16,12 +13,12 @@ function LoadItems (_jsonPath) {
     });
 }
 function appendInContainer(_container, _planoSingle){
-    _container.append(getPlanoSingleHTML(_planoSingle.price, _planoSingle.about, getItemsHTML(_planoSingle.items)));
+    _container.append(getPlanoSingleHTML(_planoSingle.price, _planoSingle.about, _planoSingle.planNum, getItemsHTML(_planoSingle.items)));
 }
-function getPlanoSingleHTML(_price, _about, _getItemsHTML){
+function getPlanoSingleHTML(_price, _about, _planNum, _getItemsHTML){
     return `<div class="plano-single">
         <div class="plano-box">
-            <h2>Plano 1</h2>
+            <h2>Plano ${_planNum}</h2>
             <h1>R$ ${_price},00</h1>
             <p>${_about}</p>
             <input type="submit" value="QUERO ESSE PLANO" class="greenButton">
