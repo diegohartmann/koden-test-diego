@@ -235,7 +235,6 @@ div.tuto > div.tuto-single{
 div.tuto > div.tuto-single > img{
     margin-right: 8px;
 }
-
 div.about{
     height: 810px;
     border-top: 2px solid rgb(231, 231, 231);
@@ -401,7 +400,7 @@ footer .bottom-footer img{
 }
 #servicos-afiliado .servicos-one{
     background-color: white;
-    height: 480px;
+    min-height: 480px;
 }
 #servicos-afiliado .left-child{
     text-align: center;
@@ -443,7 +442,8 @@ footer .bottom-footer img{
 
 #vantagens-afiliado{
     padding-top: 60px;
-    padding-bottom: 50px;
+    /* height: 570px; */
+    padding-bottom: 50px ;
     background-color: var(--myPurple);
 }
 #vantagens-afiliado h2{
@@ -458,7 +458,7 @@ footer .bottom-footer img{
 }
 #vantagens-afiliado .vantagens-itens{
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     width: 80vw;
     min-width: 81.5%;
     display: flex;
@@ -547,6 +547,9 @@ footer .bottom-footer img{
         padding: 0;
         padding-left: 30px;
     }
+    /* #servicos-afiliado .servicos-three{
+        height: none;
+    } */
     footer{
         height: 300px;
     }
@@ -584,9 +587,10 @@ footer .bottom-footer img{
     .plano-single h3{
         display: none;
     }
-
+    #vantagens-afiliado{
+        height: 750px;
+    }
     #vantagens-afiliado .vantagens-itens .item-single{
-        /* width: 50%; */
-        width: 100%;
+        width: 40%;
     }
 }
