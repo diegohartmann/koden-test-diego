@@ -2,6 +2,7 @@
     /* ------- geral -- */
     --font-size: 20px;
     --myPurple: #8f4ffb;
+    --myLightGray: #f0f1f3;
     --myGreen: #00cf89;
     --myBlueOil: #344451;
     --myBlueOilDark: #212a33;
@@ -259,7 +260,7 @@ div.about > div.about-image-content{
     height: 100%;
 }
 div.about-image-content > div.about-image{
-    background-color: gray;
+    background-color: var(--myLightGray);
     width: 100%;
     height: 100%;
     margin: 0 auto;
