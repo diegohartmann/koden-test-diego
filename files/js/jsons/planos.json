@@ -1,0 +1,58 @@
+[
+    {
+        "planNum" : "1",
+        "price" : "500",
+        "about" : "O plano básico inclui os principais recursos para você começar seu negócio online. 1 domínio e 1 endereço de e-mail.",
+        "items":[
+            "Layout One-Page",
+            "Registro de domínio",
+            "Google Meu Negócio",
+            "Hospedagem de Site",
+            "Hospedagem para E-mail (5 contas)",
+            "E-mails Personalizados",
+            "Layout pronto para Celulares, Tablets e PCs",
+            "Estatísticas de acesso por e-mail",
+            "Otimizações para Google (SEO)",
+            "Recebimento de Contatos do Site no Celular"
+        ]
+    },
+    {
+        "planNum" : "2",
+        "price" : "1.500",
+        "about" : "O plano mais indicado e mais vendido, com recursos necessários para qualquer empresa ganhar destaque na internet.",
+        "items":[
+            "Layout One-Page",
+            "Registro de domínio",
+            "Google Meu Negócio",
+            "Hospedagem de Site",
+            "Hospedagem para E-mail (5 contas)",
+            "E-mails Personalizados",
+            "Layout pronto para Celulares, Tablets e PCs",
+            "Estatísticas de acesso por e-mail",
+            "Otimizações para Google (SEO)",
+            "Recebimento de Contatos do Site no Celular",
+            "Criação do Site",
+            "Chat no site utilizando o celular"
+        ]
+    },
+    {
+        "planNum" : "3",
+        "price" : "2.500",
+        "about" : "Plano com todos os recursos inclusos, com maiores recursos, revisões profissionais, SEO garantido e as principais ferramentas.",
+        "items":[
+            "Layout One-Page",
+            "Registro de domínio",
+            "Google Meu Negócio",
+            "Hospedagem de Site",
+            "Hospedagem para E-mail (5 contas)",
+            "E-mails Personalizados",
+            "Layout pronto para Celulares, Tablets e PCs",
+            "Estatísticas de acesso por e-mail",
+            "Otimizações para Google (SEO)",
+            "Recebimento de Contatos do Site no Celular",
+            "Criação do Site",
+            "Chat no site utilizando o celular",
+            "Criação de Blog para conteúdos adicionais"
+        ]
+    }
+]

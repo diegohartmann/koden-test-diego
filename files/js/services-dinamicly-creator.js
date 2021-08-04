@@ -1,8 +1,7 @@
 $(document).ready(Init());
 
 function Init(){
-    let dataPath = `${window.location.href}/js/jsons/servicos.json`
-    LoadServicesDynamicaly(dataPath);
+    LoadServicesDynamicaly(`${window.location.href}/js/jsons/servicos.json`);
 }
 function LoadServicesDynamicaly (_jsonPath) {
     const itemsContainer = $('.diff-items');

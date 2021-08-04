@@ -11,4 +11,5 @@
     1. Criação da pagina 'home' com flex-box e float;
 		1.1 Senti falta de usar React para reutilizar o botão verde do site;
 		1.2 Script que adiciona itens (serviços) dinamicamente atravez de um arquivo .json contendo o array com todos eles (servicos.json);
+		1.3 Criação da sessão de planos disponíveis, dinamicamente com json
 	2. Criação da pagina de afiliado
