@@ -261,10 +261,12 @@ section.planos{
 }
 .planos .planos-container .plano-single{
     width: 33.3%;
+    max-width: 350px;
     float: left;
     padding: 8px;
 }
 .plano-box{
+    /* height: 215px; */
     padding: 13px;
     width: 100%;
     background-color: white;
@@ -336,8 +338,26 @@ section.planos{
     width: 69%;
     text-align: right;
 }
-
 footer{
+    color: var(--myBlueOil);
     background-color: white;
     height: 800px;
+    text-align: center;
+}
+footer .upper-footer{
+    padding-top: 150px;
+    height: 65%;
+}
+
+.upper-footer h2{
+    font-size: 26px;
+}
+footer .bottom-footer{
+    height: 45%;
+}
+footer .bottom-footer .blank-space{
+    height: 60%;
+}
+footer .bottom-footer img{
+    margin-bottom: 15px;
 }
