@@ -13,7 +13,7 @@ function Init(){
         }
     });
 }
-const isInPageLink = (_href) => _href !== 'afiliado.html' && _href !== 'index.html';
+const isInPageLink = (_href) => _href !== 'afiliado.html' && _href !== 'index.html' && _href !== '/' && _href !== '/koden-test-diego/files';
 
 function animatePageTo(_page, _section){
     _page.animate({
