@@ -456,6 +456,7 @@ footer .bottom-footer img{
     height: 210px;
     width: 250px;
     margin: 10px;
+    background-color: white;
     --box-shadow-datta : 0px 0px 50px -2px rgba(0,0,0,0.08);
     -webkit-box-shadow: var(--box-shadow-datta) ; 
     box-shadow: var(--box-shadow-datta) ;
@@ -630,5 +631,26 @@ footer .bottom-footer img{
     }
     #vantagens-afiliado .vantagens-itens .item-single{
         width: 40%;
+    }
+    .servicos-two .cards-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width: 1015px){
+    .servicos-two .cards-container{
+        grid-template-columns: auto auto;
+    }
+    .servicos-two .cards-container .card-single{
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .servicos-two .cards-container{
+        display: block;
+    }
+    .servicos-two .cards-container .card-single{
+        width: 70%;
+        margin: 15px auto;
     }
 }
