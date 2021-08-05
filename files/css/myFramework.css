@@ -29,7 +29,7 @@ html{
     background-size: cover;
 }
 .bg-one{
-    background-image: url('../assets/img/mockup-bg-2.jpg');
+    background-image: url('../assets/img/mockup-bg-1.jpg');
     background-repeat: no-repeat;
     background-position-x: -250px;
     background-size: cover;
@@ -39,13 +39,19 @@ html{
     -ms-transform: var(--transformInfo);
 }
 .bg-two{
-    background-image: url('../assets/img/mockup-bg-1.jpg');
+    background-image: url('../assets/img/mockup-bg-2.jpg');
     background-repeat: no-repeat;
-    background-position-x: -400px;
+    /* background-position-x: -400px; */
     background-position: center;
     background-size: cover;
     --transformInfo: scaleX(-1);
     transform: var(--transformInfo);
     -o-transform: var(--transformInfo);
     -ms-transform: var(--transformInfo);
+}
+.bg-three{
+    background-image: url('../assets/img/mockup-bg-3.png');
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    background-size: cover;
 }

@@ -161,6 +161,7 @@ header .mobile-nav-container nav ul li{
     display: inline-block;
     list-style-type: none;
     padding: 8px;
+    cursor: pointer;
 }
 header .mobile-nav-container nav ul li a{
     font-size: var(--headerFontSize);
@@ -337,7 +338,7 @@ div.about-text-content > input{
 }
 div.about > div.about-image-content{
     width: 45%;
-    padding: 20px 100px; /*TEST*/
+    padding: 20px 100px;
     display: block;
     height: 100%;
 }
