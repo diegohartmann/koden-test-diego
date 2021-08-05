@@ -134,6 +134,7 @@ header .mobile-nav-container:hover > nav{
     opacity: 1;
     width: 200px;
     height: auto;
+    border-radius: 5px;
     border-top-right-radius: 35px;
 }
 header .mobile-nav-container nav{
@@ -517,7 +518,7 @@ footer .bottom-footer img{
 .cards-container .card-single{
     height: 210px;
     width: 250px;
-    margin: 10px;
+    margin: 10px auto;
     background-color: white;
     color: var(--myBlueOil);
 }
