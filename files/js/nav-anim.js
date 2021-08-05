@@ -5,7 +5,7 @@ function Init(){
     const menuItems = $('header nav ul li a');
     menuItems.click(function(e){
         const tthisHref = $(this).attr('href');
-        if(tthisHref !== 'afiliado.html'){
+        if(tthisHref !== 'afiliado.html' || tthisHref !== 'index.html'){
             e.preventDefault();
             e.stopPropagation();
             animatePageTo(page, tthisHref);
@@ -13,9 +13,8 @@ function Init(){
         }
     });
 }
-
-function animatePageTo(_page, _el){
+function animatePageTo(_page, _section){
     _page.animate({
-        'scrollTop': $(_el).offset().top,
+        'scrollTop': $(_section).offset().top,
     })
 }
