@@ -172,19 +172,19 @@ section.home{
     height: 745px;
     background-color: white;
 }
-section.home > .home-content{
+.home-content{
     padding-top: 30px;
     margin: 0 auto;
     width: 31%;
     display: flex row;
     text-align: center;
 }
-section.home > .home-content  h2{
+.home-content  h2{
     font-weight: 400;
     font-size: 36px;
     color: var(--myBlueOil);
 }
-section.home > .home-content p{
+.home-content p{
     font-weight: 400;
     color: var(--myBlueOil);
     padding: 0 15px;
@@ -480,41 +480,21 @@ footer .bottom-footer img{
     margin-bottom: 15px;
 }
 /* ========= AFILIADO =================================== */
-#servicos-afiliado{
-    /* padding: 60px 0; */
-    padding-top: 60px;
-}
+
 #servicos-afiliado .servicos-one{
     background-color: white;
-    min-height: 480px;
+    padding-bottom: 25px;
 }
-#servicos-afiliado .left-child{
-    text-align: center;
-    padding: 50px 2%;
+#servicos-afiliado .home-content{
     float: left;
     width: 50%;
-}
-#servicos-afiliado .left-child h2{
-    font-weight: 400;
-    font-size: 36px;
-    color: var(--myBlueOil);
-}
-#servicos-afiliado .left-child p{
-    font-weight: 400;
-    color: var(--myBlueOil);
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 95%;
-    font-size: 15px;
-}
-#servicos-afiliado .left-child input{
-    display: block;
-    margin: 0 auto; 
+    padding-left: 2%;
 }
 #servicos-afiliado .right-child{
     float: right;
     width: 50%;
     padding: 0 90px;
+    margin-top: 35px;
 }
 #servicos-afiliado .right-child .right-image{
     width: 100%;
@@ -633,17 +613,17 @@ footer .bottom-footer img{
         height: 400px;
         background-color: white;
     }
-    section.home > .home-content{
+    .home-content{
         padding-top: 80px;
         width: 80%;
         margin: 0 auto;
         text-align: center;
     }
-    section.home > .home-content  h2{
+    .home-content  h2{
         font-weight: 400;
         font-size: 32px;
     }
-    section.home > .home-content p{
+    .home-content p{
         vertical-align: center;
         padding: 0 20%;
     }
@@ -757,6 +737,28 @@ footer .bottom-footer img{
         margin: 10px auto;
     }
 }
+@media screen and (max-width: 922px){
+    #servicos-afiliado .home-content{
+        float: none;
+        width: 95%;
+        padding-top: 80px;
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+        /* text-align: center; */
+    }
+    #servicos-afiliado .home-content  h2{
+        /* font-weight: 400; */
+        font-size: 32px;
+    }
+    #servicos-afiliado .home-content p{
+        /* vertical-align: center; */
+        padding: 0 20%;
+    }
+    #servicos-afiliado .right-child{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 870px){
     section.differs > iframe.vid-med{
@@ -868,17 +870,17 @@ footer .bottom-footer img{
     section.home{
         border-top: 1px solid var(--myLightGray);
     }
-    section.home > .home-content{
+    .home-content, #servicos-afiliado .home-content{
         width: 90%;
     }
-    section.home > .home-content  h2{
+    .home-content  h2, #servicos-afiliado .home-content h2{
         font-weight: 400;
         font-size: 26px;
         color: var(--myBlueOil);
     }
 }
 @media screen and (max-width: 412px){
-    section.home > .home-content p{
+    .home-content p, #servicos-afiliado .home-content{
         padding: 0;
         width: 100%;
         margin-bottom: -20px;
