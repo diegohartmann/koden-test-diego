@@ -11,14 +11,17 @@
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    height: 60px;
-    width: 430px;
+    height: 55px;
+    line-height: 55px;
+    width: 415px;
     font-size: 18px;
     text-align: center;
     align-content: center;
     background-color: var(--myGreen);
     cursor: pointer;
     transition: .08s;
+    display: block;
+    margin: 0 auto;
 }
 .greenButton:hover{
     /* --transform-data: scale(1.01);
@@ -47,7 +50,7 @@
 }
 .joinButtonMobile{
     background-color: var(--myPurple);
-    border-radius: 8px;
+    border-radius: 2px;
     /* border: 2px solid var(--myPurple); */
     color: white;
     width: 120px;
@@ -282,8 +285,10 @@ div.tuto > div.tuto-single{
 div.tuto > div.tuto-single > img{
     margin-right: 8px;
 }
+
 div.about{
-    height: 810px;
+    height: 500px;
+    /* height: 810px; */
     border-top: 2px solid rgb(231, 231, 231);
     display: flex;
     align-items: center;
@@ -300,18 +305,25 @@ div.about-text-content > ul{
 div.about-text-content > ul li{
     padding: 4px;
 }
+div.about-text-content > input{
+    margin: 0;
+}
 div.about > div.about-image-content{
     width: 45%;
-    padding: 180px 100px;
+    /* padding: 180px 100px; */
+    padding: 20px 100px; /*TEST*/
+    display: block;
     height: 100%;
 }
 div.about-image-content > div.about-image{
-    background-color: var(--myLightGray);
+    background-color: red;
+    /* background-color: var(--myLightGray); */
     width: 100%;
     height: 100%;
     margin: 0 auto;
     /* margin-top: 100px; */
 }
+
 /* ---------------- PLANOS ---------------------------------- */
 section.planos{
     /* height: 900px; */
@@ -505,7 +517,7 @@ footer .bottom-footer img{
 }
 .servicos-two .cards-container{
     width: 80vw;
-    margin: 0 auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -536,6 +548,23 @@ footer .bottom-footer img{
     color: var(--myBlueOil);
     font-size: 16px;
 }
+
+.servicos-two h3{
+    text-align: center;
+    font-weight: 400;
+    color: var(--myBlueOil);
+}
+.servicos-two .empresas-clientes{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+
 #vantagens-afiliado{
     padding-top: 60px;
     /* height: 570px; */
@@ -621,12 +650,12 @@ footer .bottom-footer img{
     div.tutorial-wraper{
         height: 200px;
     }
-    div.about{
+    /* div.about{
         height: 500px;
     }
     div.about > div.about-image-content{
         padding: 20px 100px;
-    }
+    } */
     /* ---------------- PLANOS ---------------------------------- */
     .planos .selo-garantia{
         width: 40%;
@@ -686,9 +715,6 @@ footer .bottom-footer img{
     section.differs > div.diff-items .item-single{
         font-size: 13px;
     }
-    #vantagens-afiliado{
-        height: 750px;
-    }
     #vantagens-afiliado .vantagens-itens .item-single{
         width: 40%;
     }
@@ -703,12 +729,36 @@ footer .bottom-footer img{
     header > .mobile-nav-container{
         display: block;
     }
+
+         /* height: 810px; */
+        /* border-top: 2px solid rgb(231, 231, 231); */
+        /* display: flex; */
+        /* align-items: center; */
+    div.about > div.about-text-content{
+        width: 100%;
+        /* padding: 0 100px; */
+    }
+    /* div.about-text-content > ul{ */
+        /* padding-left: 20px; */
+        /* margin: 20px 0; */
+    /* } */
+    /* div.about-text-content > ul li{ */
+        /* padding: 4px; */
+    /* } */
+    /* div.about-text-content > input{
+        margin: 0;
+    } */
+    div.about > div.about-image-content{
+        display: none;
+    }
+
     .servicos-two .cards-container{
         grid-template-columns: auto auto;
     }
     .servicos-two .cards-container .card-single{
         margin: 10px auto;
     }
+
 }
 @media screen and (max-width: 945px){
     
@@ -723,6 +773,10 @@ footer .bottom-footer img{
     }
 }
 @media screen and (max-width: 768px){
+   .greenButton{
+       width: 300px;
+   }
+   div.about{
    
 }
 @media screen and (max-width: 660px){
