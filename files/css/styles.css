@@ -496,6 +496,7 @@ footer .bottom-footer img{
     color: var(--myBlueOil);
     font-size: 30px;
     width: 400px;
+    max-width: 85vw;
     font-weight: 300;
     display: block;
     margin: 0 auto;
@@ -505,9 +506,16 @@ footer .bottom-footer img{
     color: var(--myBlueOil);
     font-size: 15px;
     width: 550px;
+    max-width: 85vw;
     font-weight: 400;
     display: block;
     margin: 0 auto;
+    text-align: center;
+}
+.servicos-two h3{
+    display: block;
+    margin: 0 auto;
+    max-width: 85vw;
     text-align: center;
 }
 .servicos-two .cards-container{
@@ -544,13 +552,15 @@ footer .bottom-footer img{
     color: var(--myBlueOil);
 }
 .servicos-two .empresas-clientes{
-    display: flex;
     margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     width: 60%;
-    min-width: 500px;
+    /* min-width: 500px; */
     max-width: 800px;
+}
+.servicos-two .empresas-clientes img{
+    margin: 0 auto;
 }
 #vantagens-afiliado{
     padding-top: 60px;
@@ -732,6 +742,16 @@ footer .bottom-footer img{
     #servicos-afiliado .right-child{
         display: none;
     }
+    .servicos-two > h3{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    .servicos-two .empresas-clientes{
+        grid-template-columns:  auto auto;
+    }
+    .servicos-two .empresas-clientes img{
+        margin: 10px auto;
+    }
 }
 
 @media screen and (max-width: 870px){
@@ -872,6 +892,14 @@ footer .bottom-footer img{
     .home-content  h2, #servicos-afiliado .home-content h2{
         font-size: 26px;
     }
+}
+@media screen and (max-width: 540px){
+    .servicos-two .empresas-clientes{
+        grid-template-columns:  auto;
+    }
+    /* .servicos-two .empresas-clientes img{
+        margin: 10px auto;
+    } */
 }
 @media screen and (max-width: 412px){
     .home-content p, #servicos-afiliado .home-content p{
