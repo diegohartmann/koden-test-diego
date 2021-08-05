@@ -193,7 +193,6 @@ section.home{
     width: 95%;
     font-size: 17px;
 }
-
 section.differs{
     position: relative;
     padding: 0 2%;
@@ -270,7 +269,6 @@ section.differs > div.diff-items{
 .item-single > img{
     margin-right: 10px;
 }
- 
 div.tutorial-wraper{
     padding: 30px 0;
 } 
@@ -311,7 +309,6 @@ div.tuto > div.tuto-single{
 div.tuto > div.tuto-single > img{
     margin-right: 8px;
 }
-
 div.about{
     height: 500px;
     border-top: 2px solid rgb(231, 231, 231);
@@ -348,7 +345,6 @@ div.about-image-content > div.about-image{
     height: 100%;
     margin: 0 auto;
 }
-
 /* ---------------- PLANOS ---------------------------------- */
 section.planos{
     background: var(--myPurple);
@@ -424,7 +420,6 @@ section.planos{
     margin-right: 8px;
     margin-bottom: -3px;
 }
-
 .planos .selo-garantia{
     width: 80%;
     max-width: 1100px;
@@ -459,7 +454,6 @@ footer .upper-footer{
     padding-top: 150px;
     height: 65%;
 }
-
 .upper-footer h2{
     font-size: 26px;
 }
@@ -473,7 +467,6 @@ footer .bottom-footer img{
     margin-bottom: 15px;
 }
 /* ========= AFILIADO =================================== */
-
 #servicos-afiliado .servicos-one{
     background-color: white;
     padding-bottom: 25px;
@@ -543,7 +536,6 @@ footer .bottom-footer img{
     color: var(--myBlueOil);
     font-size: 16px;
 }
-
 .servicos-two h3{
     text-align: center;
     font-weight: 400;
@@ -590,9 +582,7 @@ footer .bottom-footer img{
     margin: 0 auto;
 }
 /* -------------------------------------------------- */
-
 @media screen and (max-width: 1366px){
-   
     header{
         margin: 0 auto;
         width: 90vw;
@@ -619,9 +609,6 @@ footer .bottom-footer img{
         vertical-align: center;
         padding: 0 20%;
     }
-    /* section.differs{
-        height: 720px;
-    } */
     section.differs > iframe.vid-big{
         display: none;
     }
@@ -637,7 +624,6 @@ footer .bottom-footer img{
     section.differs > div.diff-items .item-single{
         margin-bottom: 10px;
     }
-   
     /* ---------------- PLANOS ---------------------------------- */
     .planos .selo-garantia{
         width: 550px;
@@ -654,7 +640,6 @@ footer .bottom-footer img{
         padding: 0;
         padding-left: 30px;
     }
-  
     footer{
         height: 300px;
     }
@@ -668,8 +653,6 @@ footer .bottom-footer img{
         margin-bottom: 10px;
     }
 }
-
-
 @media screen and (max-width: 1270px){
     .plano-single{
         margin:  0 auto;
@@ -708,7 +691,6 @@ footer .bottom-footer img{
     .item-single{
         width: 40%;
     }
-    
 }
 @media screen and (max-width: 1015px){
     header > .pc-nav-container{
@@ -733,19 +715,16 @@ footer .bottom-footer img{
 @media screen and (max-width: 922px){
     #servicos-afiliado .home-content{
         float: none;
-        width: 95%;
+        width: 31%;
         padding-top: 80px;
         width: 80%;
         margin: 0 auto;
         padding-left: 0;
-        /* text-align: center; */
     }
     #servicos-afiliado .home-content  h2{
-        /* font-weight: 400; */
         font-size: 32px;
     }
     #servicos-afiliado .home-content p{
-        /* vertical-align: center; */
         padding: 0 20%;
     }
     #servicos-afiliado .right-child{
@@ -863,20 +842,15 @@ footer .bottom-footer img{
     .item-single{
         width: 100%;
     }
-    section.home{
-        border-top: 1px solid var(--myLightGray);
-    }
     .home-content, #servicos-afiliado .home-content{
         width: 90%;
     }
     .home-content  h2, #servicos-afiliado .home-content h2{
-        font-weight: 400;
         font-size: 26px;
-        color: var(--myBlueOil);
     }
 }
 @media screen and (max-width: 412px){
-    .home-content p, #servicos-afiliado .home-content{
+    .home-content p, #servicos-afiliado .home-content p{
         padding: 0;
         width: 100%;
         margin-bottom: -20px;
