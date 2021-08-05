@@ -584,8 +584,7 @@ footer .bottom-footer img{
 }
 #vantagens-afiliado{
     padding-top: 60px;
-    /* height: 570px; */
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
     background-color: var(--myPurple);
 }
 #vantagens-afiliado h2{
@@ -603,6 +602,8 @@ footer .bottom-footer img{
     margin-bottom: 50px;
     width: 80vw;
     min-width: 81.5%;
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -653,7 +654,7 @@ footer .bottom-footer img{
     section.differs > h2{
         margin-bottom: 30px;
     }
-    section.differs > div.diff-items .item-single{
+    .item-single{
         margin-bottom: 10px;
     }
     /* ---------------- PLANOS ---------------------------------- */
@@ -709,12 +710,12 @@ footer .bottom-footer img{
     .plano-single h3{
         display: none;
     }
-    section.differs > div.diff-items .item-single{
+    .item-single{
         font-size: 13px;
-    }
-    #vantagens-afiliado .vantagens-itens .item-single{
         width: 40%;
     }
+    /* .item-single{ */
+    /* } */
     .servicos-two .cards-container{
         grid-template-columns: auto auto auto;
     }
@@ -776,16 +777,6 @@ footer .bottom-footer img{
         margin: 10px auto;
     }
 }
-
-@media screen and (max-width: 870px){
-    section.differs > iframe.vid-med{
-        display: none;
-    }
-    section.differs > iframe.vid-small{
-        display: block;
-        position: absolute;
-    }
-}
 @media screen and (max-width: 878px){
     div.tuto > div.tuto-single{
         float: none;
@@ -796,6 +787,22 @@ footer .bottom-footer img{
     }
     div.tuto > div.tuto-single > img{
         margin-right: 8px;
+    }
+}
+@media screen and (max-width: 870px){
+    section.differs > iframe.vid-med{
+        display: none;
+    }
+    section.differs > iframe.vid-small{
+        display: block;
+        position: absolute;
+    }
+}
+@media screen and (max-width:863px){
+    #vantagens-afiliado h2{
+        width: 85vw;
+        font-size: 26px;
+        margin-bottom: -60px;
     }
 }
 @media screen and (max-width: 817px){
