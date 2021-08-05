@@ -30,4 +30,5 @@
 		2.4 flexbox tirado do container das imagens de empresas clientes, foi implementado o display:grid --> resultado mais satisfatório
 		
 	3. Media queria em todas as paginas para celular
-	
+
+	4. Ultimo ajuiste responsivo na pagina 'afiliados' e temos uma primeira versao concluida pro teste;
