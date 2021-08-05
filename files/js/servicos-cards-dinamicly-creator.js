@@ -1,26 +1,32 @@
 $(document).ready(function(){
-    console.log(window.location.href);
-    LoadServicesDynamicaly(`${window.location.href}/../js/jsons/servicos-cards.json`);
+    LoadCardsDynamicaly(`${window.location.href}/../js/jsons/servicos-cards.json`);
 });
-function LoadServicesDynamicaly (_jsonPath) {
+function LoadCardsDynamicaly (_jsonPath) {
     const itemsContainer = $('.cards-container');
     $.getJSON(_jsonPath, function(data){
-        data.forEach(service => {
-            appendService(itemsContainer, service);
+        data.forEach(card => {
+            appendCard(itemsContainer, card);
         });
     }).fail(function(){
-        console.log("Erro ao ler arquivo .json de 'vantagens'")
-        appendService(itemsContainer, "Erro. Recarregue a página.");
+        console.log("Erro ao ler arquivo .json de 'servicos-cards'")
+        for (let index = 0; index < 8; index++) {
+            appendCard(itemsContainer, {
+                title: "Erro ao ler ítem.",
+                about: "Ocorreu um problema ao tentar carregar as informações deste item.",
+                color: "#ccc"
+            });
+        }
     });
 }
-function appendService(_container, _service){
-    _container.append( getServiceHTML(_service) )
+function appendCard(_container, _card){
+    _container.append(getCardHTML(_card) )
 }
-const getServiceHTML = (__service) =>{
+const getCardHTML = (__card) =>{
     return `
-        <div class="item-single">
-            <img src="assets/img/eumei-list-style.png" alt="vantagem">
-            <p>${__service}</p>
-        </div>
+        <div class="card-single">
+            <div style="margin-bottom: 30px; height: 2px; width: 100%; background-color: ${__card.color};"></div>
+            <h2><b>${__card.title}</b></h2>
+            <p>${__card.about}</p>
+        </div> 
     `
 }

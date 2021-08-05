@@ -24,6 +24,9 @@
 		(04/08)
 		1.5 Finalização do footer da home;
 		1.6 Testei site em resolucao 1920 em :http://whatismyscreenresolution.net/;
-		1.7 media-queries para tela de notebook (1366px)
+		1.7 media-queries para tela de notebook (1366px);
+		1.8 Estudo de display GRID para criar a sessao dos cards na pagina afiliados;
+			1.8.1 Cards adicionados dinamicamente (json);
+		1.9 Estudo dos grids: sucesso, funcionando;
 	
 	2. Criação da pagina de afiliado

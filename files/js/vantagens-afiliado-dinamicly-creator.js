@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log(window.location.href);
     LoadServicesDynamicaly(`${window.location.href}/../js/jsons/vantagens-afiliado.json`);
 });
 function LoadServicesDynamicaly (_jsonPath) {
