@@ -14,9 +14,11 @@ function Init(){
     });
 }
 function isInPageLink(_href){
-    return _href !== 'afiliado.html' && _href !== './' && _href !== '../files/'  && _href !== '../';
+    return  _href !== 'afiliado.html'
+            && _href !== './'
+            && _href !== '../files/'
+            && _href !== '../'
 } 
-    
 
 function animatePageTo(_page, _section){
     _page.animate({

@@ -339,25 +339,21 @@ div.about-text-content > input{
 }
 div.about > div.about-image-content{
     width: 45%;
-    /* padding: 180px 100px; */
     padding: 20px 100px; /*TEST*/
     display: block;
     height: 100%;
 }
 div.about-image-content > div.about-image{
-    background-color: red;
-    /* background-color: var(--myLightGray); */
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    /* margin-top: 100px; */
 }
 
 /* ---------------- PLANOS ---------------------------------- */
 section.planos{
     background: var(--myPurple);
     padding: 60px 2%;
-    position: relative;
+    /* position: relative; */
 }
 .planos > h2{
     margin-bottom: 60px;
@@ -496,7 +492,6 @@ footer .bottom-footer img{
 #servicos-afiliado .right-child .right-image{
     width: 100%;
     height: 360px;
-    background-color: var(--myBlueOil);
 }
 #servicos-afiliado .servicos-two{
     background-color:var(--myLightGray);
@@ -861,6 +856,7 @@ footer .bottom-footer img{
         transform: var(--transformVal);
         -o-transform: var(--transformVal);
         -ms-transform: var(--transformVal);
+        margin-left: -15vw;
     }
 }
 @media screen and (max-width: 569px){

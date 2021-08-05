@@ -22,3 +22,30 @@ html{
     -webkit-box-shadow: var(--box-shadow-datta) ; 
     box-shadow: var(--box-shadow-datta) ;
 }
+.bg-deal{
+    background-image: url('../assets/img/deal.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-one{
+    background-image: url('../assets/img/mockup-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+    background-size: cover;
+     --transformInfo: scaleX(-1);
+    transform: var(--transformInfo);
+    -o-transform: var(--transformInfo);
+    -ms-transform: var(--transformInfo);
+}
+.bg-two{
+    background-image: url('../assets/img/mockup-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position-x: -400px;
+    background-position: center;
+    background-size: cover;
+    --transformInfo: scaleX(-1);
+    transform: var(--transformInfo);
+    -o-transform: var(--transformInfo);
+    -ms-transform: var(--transformInfo);
+}
