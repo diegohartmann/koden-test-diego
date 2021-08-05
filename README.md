@@ -27,6 +27,7 @@
 		2.1 Estudo de display GRID para criar a sessao dos cards;
 		2.2 Cards adicionados dinamicamente (json);
 		2.3 Estudo dos grids: sucesso, funcionando;
+		2.4 flexbox tirado do container das imagens de empresas clientes, foi implementado o display:grid --> resultado mais satisfatório
 		
 	3. Media queria em todas as paginas para celular
 	

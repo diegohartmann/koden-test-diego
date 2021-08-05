@@ -125,7 +125,7 @@ header .mobile-nav-container{
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    background-color: black;
+    background-color: var(--myPurple);
     position: relative;
     display: none;
     z-index: 99;
@@ -147,6 +147,7 @@ header .mobile-nav-container nav{
     height: 0;
     overflow: hidden;
     background-color: var(--myBlueOilDark);
+    border: 2px solid var(--myGreen);
     padding: 8px;
     position: absolute;
     top: 0;
@@ -173,7 +174,26 @@ header .mobile-nav-container nav ul li a{
 /*---------------------------------*/
 section.home{
     height: 745px;
-    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.banner-icons-left, .banner-icons-right{
+    top: 0;
+    opacity: .1;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+} 
+.banner-icons-left{
+    background-image: url('../assets/img/banner-icons-left.png');
+    left: 0;
+}
+.banner-icons-right{
+    background-image: url('../assets/img/banner-icons-right.png');
+    right: 0;
 }
 .home-content{
     padding-top: 30px;
@@ -705,6 +725,9 @@ footer .bottom-footer img{
     }
 }
 @media screen and (max-width: 1015px){
+    body{
+        padding-top:30px;
+    }
     header > .pc-nav-container{
         display: none;
     }
@@ -897,9 +920,6 @@ footer .bottom-footer img{
     .servicos-two .empresas-clientes{
         grid-template-columns:  auto;
     }
-    /* .servicos-two .empresas-clientes img{
-        margin: 10px auto;
-    } */
 }
 @media screen and (max-width: 412px){
     .home-content p, #servicos-afiliado .home-content p{
