@@ -183,13 +183,10 @@ section.home > .home-content p{
     width: 95%;
     font-size: 17px;
 }
-section.home input{
-    display: block;
-    margin: 0 auto; 
-}
+
 section.differs{
-    height: 940px;
     position: relative;
+    padding-bottom: 40px;
     background-color: var(--myPurple);
 }
 section.differs > iframe.vid-big{
@@ -220,6 +217,16 @@ section.differs > iframe.vid-small{
          -o-transform: var(--transform-data);
     -webkit-transform: var(--transform-data);
 }
+section.differs > iframe.vid-mobile{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+     left: 50%;
+    --transform-data: translate(-50%, 15%);
+            transform: var(--transform-data);
+         -o-transform: var(--transform-data);
+    -webkit-transform: var(--transform-data);
+}
 section.differs .differs-blank{
     height: 480px;
 }
@@ -239,7 +246,7 @@ section.differs > div.diff-items{
     align-items: start;
     justify-content: space-between
 }
- .item-single{
+.item-single{
     display: inline-flex;
     align-items: center;
     width: 25%;
@@ -253,9 +260,6 @@ section.differs > div.diff-items{
     margin-right: 10px;
 }
 
-section.how-works{
-    height: 1920px
-}
 div.tutorial-wraper{
     height: 320px;
     padding-top: 60px;
@@ -288,7 +292,6 @@ div.tuto > div.tuto-single > img{
 
 div.about{
     height: 500px;
-    /* height: 810px; */
     border-top: 2px solid rgb(231, 231, 231);
     display: flex;
     align-items: center;
@@ -297,6 +300,10 @@ div.about > div.about-text-content{
     color: var(--myBlueOil);
     width: 55%;
     padding: 0 100px;
+}
+div.about > div.about-text-content h1{
+    font-size: 28px;
+    font-weight: 300;
 }
 div.about-text-content > ul{
     padding-left: 20px;
@@ -326,7 +333,6 @@ div.about-image-content > div.about-image{
 
 /* ---------------- PLANOS ---------------------------------- */
 section.planos{
-    /* height: 900px; */
     background: var(--myPurple);
     padding: 60px 2%;
     position: relative;
@@ -454,6 +460,7 @@ footer .bottom-footer img{
 }
 /* ========= AFILIADO =================================== */
 #servicos-afiliado{
+    /* padding: 60px 0; */
     padding-top: 60px;
 }
 #servicos-afiliado .servicos-one{
@@ -531,9 +538,7 @@ footer .bottom-footer img{
     box-shadow: var(--box-shadow-datta) ;
     color: var(--myBlueOil);
 }
-    
 .card-single h2{
-    /* transform: translateY(25px); */
     font-weight: 400;
     width: 90%;
     height: 30%;
@@ -563,8 +568,6 @@ footer .bottom-footer img{
     min-width: 500px;
     max-width: 800px;
 }
-
-
 #vantagens-afiliado{
     padding-top: 60px;
     /* height: 570px; */
@@ -626,9 +629,9 @@ footer .bottom-footer img{
         vertical-align: center;
         padding: 0 20%;
     }
-    section.differs{
+    /* section.differs{
         height: 720px;
-    }
+    } */
     section.differs > iframe.vid-big{
         display: none;
     }
@@ -644,18 +647,9 @@ footer .bottom-footer img{
     section.differs > div.diff-items .item-single{
         margin-bottom: 10px;
     }
-    section.how-works{
-        height: 1230px
-    }
     div.tutorial-wraper{
         height: 200px;
     }
-    /* div.about{
-        height: 500px;
-    }
-    div.about > div.about-image-content{
-        padding: 20px 100px;
-    } */
     /* ---------------- PLANOS ---------------------------------- */
     .planos .selo-garantia{
         width: 40%;
@@ -672,9 +666,7 @@ footer .bottom-footer img{
         padding: 0;
         padding-left: 30px;
     }
-    /* #servicos-afiliado .servicos-three{
-        height: none;
-    } */
+  
     footer{
         height: 300px;
     }
@@ -722,43 +714,30 @@ footer .bottom-footer img{
         grid-template-columns: auto auto auto;
     }
 }
+@media screen and (max-width: 1125px){
+    .item-single{
+        width: 40%;
+    }
+}
 @media screen and (max-width: 1015px){
-     header > .pc-nav-container{
+    header > .pc-nav-container{
         display: none;
     }
     header > .mobile-nav-container{
         display: block;
     }
-
-         /* height: 810px; */
-        /* border-top: 2px solid rgb(231, 231, 231); */
-        /* display: flex; */
-        /* align-items: center; */
     div.about > div.about-text-content{
         width: 100%;
-        /* padding: 0 100px; */
     }
-    /* div.about-text-content > ul{ */
-        /* padding-left: 20px; */
-        /* margin: 20px 0; */
-    /* } */
-    /* div.about-text-content > ul li{ */
-        /* padding: 4px; */
-    /* } */
-    /* div.about-text-content > input{
-        margin: 0;
-    } */
     div.about > div.about-image-content{
         display: none;
     }
-
     .servicos-two .cards-container{
         grid-template-columns: auto auto;
     }
     .servicos-two .cards-container .card-single{
         margin: 10px auto;
     }
-
 }
 @media screen and (max-width: 945px){
     
@@ -776,8 +755,22 @@ footer .bottom-footer img{
    .greenButton{
        width: 300px;
    }
-   div.about{
-   
+}
+@media screen and (max-width: 710px){
+    div.about {
+        height: auto;
+        padding:60px 0;
+    }
+    div.about > div.about-text-content h1{
+        font-size: 22px;
+    }
+    div.about > div.about-text-content p{
+        font-size: 13px;
+    }
+    div.about > div.about-text-content ul li{
+        font-size: 13px;
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 660px){
     .servicos-two .cards-container{
@@ -786,5 +779,37 @@ footer .bottom-footer img{
     .servicos-two .cards-container .card-single{
         width: 70%;
         margin: 15px auto;
+    }
+    section.differs > iframe.vid-small{
+        display: none;
+    }
+    section.differs > iframe.vid-mobile{
+        display: block;
+    }
+    section.differs .differs-blank{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 569px){
+    .item-single{
+        width: 100%;
+    }
+    section.home{
+        border-top: 1px solid var(--myLightGray);
+    }
+    section.home > .home-content{
+        width: 90%;
+    }
+    section.home > .home-content  h2{
+        font-weight: 400;
+        font-size: 26px;
+        color: var(--myBlueOil);
+    }
+}
+@media screen and (max-width: 412px){
+    section.home > .home-content p{
+        padding: 0;
+        width: 100%;
+        margin-bottom: -20px;
     }
 }
