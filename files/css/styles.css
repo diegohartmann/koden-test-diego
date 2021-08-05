@@ -742,7 +742,6 @@ footer .bottom-footer img{
         display: block;
         position: absolute;
     }
-    
 }
 @media screen and (max-width: 878px){
     div.tuto > div.tuto-single{
@@ -832,12 +831,35 @@ footer .bottom-footer img{
     }
 }
 @media screen and (max-width: 590px){
-    .selo-garantia {
-        --transformVal: scale(0.6);
-        transform: var(--transformVal);
-        -o-transform: var(--transformVal);
-        -ms-transform: var(--transformVal);
-        margin-left: -15vw;
+    .planos .selo-garantia {
+        transition: .2s;
+        width: 250px;
+        height: 100px;
+        flex-direction: column;
+        margin-bottom: -105px;
+    }
+    .planos .selo-garantia:hover {
+        /* width: 250px; */
+        height: 180px;
+        margin-bottom: -180px;
+    }
+    .planos .selo-garantia img{
+        margin-bottom: -15px;
+        margin-left: -125px;
+    }
+    .planos .selo-garantia:hover > p{
+        display: block;        
+    }
+    .planos .selo-garantia p{
+        display: none;
+        border: 0;
+        border-top: 1px solid #ccc;
+        padding:0 15px;
+        padding-top: 16px;
+        margin: 0 auto; 
+        /* margin-top: -15px; */
+        width: 100%;
+        text-align: center;
     }
 }
 @media screen and (max-width: 569px){
