@@ -186,6 +186,7 @@ section.home > .home-content p{
 
 section.differs{
     position: relative;
+    padding: 0 2%;
     padding-bottom: 40px;
     background-color: var(--myPurple);
 }
@@ -684,6 +685,7 @@ footer .bottom-footer img{
 
 @media screen and (max-width: 1270px){
     .plano-single{
+        margin:  0 auto;
         width: 100%;
         float: none;
     }
@@ -694,9 +696,10 @@ footer .bottom-footer img{
         margin: 0 auto;
         height: auto;
         align-items: start;
-        border-bottom: 1px solid white;
         padding: 20px 0;
-
+    }
+    .plano-single:not(:last-child){
+        border-bottom: 1px solid white;
     }
     .plano-box{
         margin-right: 15px;
@@ -739,9 +742,7 @@ footer .bottom-footer img{
         margin: 10px auto;
     }
 }
-@media screen and (max-width: 945px){
-    
-}
+
 @media screen and (max-width: 870px){
     section.differs > iframe.vid-med{
         display: none;
@@ -749,6 +750,33 @@ footer .bottom-footer img{
     section.differs > iframe.vid-small{
         display: block;
         position: absolute;
+    }
+}
+@media screen and (max-width: 817px){
+    .planos h2{
+        padding: 0 2%;
+    }
+    .plano-single{
+        width: 290px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+    .plano-single .plano-single-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        /* padding-top: 0; */
+    }
+    .plano-single h3{
+        display: none;
+    }
+    .selo-garantia img{
+        margin-left: 20px;
+        width: 230px;
+    }
+    .selo-garantia p{
+        width: 69%;
+        text-align: right;
     }
 }
 @media screen and (max-width: 768px){
@@ -768,6 +796,7 @@ footer .bottom-footer img{
     }
     div.about > div.about-text-content h1{
         text-align: center;
+        padding: 0 2%;
     }
     div.about > div.about-text-content p{
         padding: 0 2%;
