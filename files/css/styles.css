@@ -761,15 +761,29 @@ footer .bottom-footer img{
         height: auto;
         padding:60px 0;
     }
+    div.about > div.about-text-content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     div.about > div.about-text-content h1{
-        font-size: 22px;
+        text-align: center;
     }
     div.about > div.about-text-content p{
-        font-size: 13px;
+        padding: 0 2%;
+        text-align: center;
+    }
+    div.about > div.about-text-content ul{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
     }
     div.about > div.about-text-content ul li{
         font-size: 13px;
         margin-left: 0;
+    }
+    div.about > div.about-text-content input{
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 660px){
