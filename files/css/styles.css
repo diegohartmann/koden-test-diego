@@ -11,9 +11,10 @@
     border-radius: 5px;
     color: white;
     text-decoration: none;
+    width: 415px;
+    max-width: 80vw;
     height: 55px;
     line-height: 55px;
-    width: 415px;
     font-size: 18px;
     text-align: center;
     align-content: center;
@@ -430,19 +431,15 @@ section.planos{
 
 .planos .selo-garantia{
     width: 80%;
+    max-width: 1100px;
     height: 60px;
-    margin: 0 auto;
     background-color: #6a34ca;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    left: 50%;
-    --transform-data: translate(-50%, 50%);
-            transform: var(--transform-data);
-         -o-transform: var(--transform-data);
-    -webkit-transform: var(--transform-data);
+    margin:  0 auto;
+    margin-bottom: -90px;
     --filter-data: drop-shadow(1px 1px 2px #000000);
     -webkit-filter: var(--filter-data);
         -moz-filter:var(--filter-data);
@@ -648,7 +645,7 @@ footer .bottom-footer img{
    
     /* ---------------- PLANOS ---------------------------------- */
     .planos .selo-garantia{
-        width: 40%;
+        width: 550px;
     }
     .selo-garantia img{
         margin-left: -50px;
@@ -716,6 +713,7 @@ footer .bottom-footer img{
     .item-single{
         width: 40%;
     }
+    
 }
 @media screen and (max-width: 1015px){
     header > .pc-nav-container{
@@ -795,18 +793,12 @@ footer .bottom-footer img{
         flex-direction: column;
         width: 100%;
         padding: 0;
-        /* padding-top: 0; */
     }
-    .plano-single h3{
-        display: none;
-    }
-    .selo-garantia img{
-        margin-left: 20px;
-        width: 230px;
-    }
-    .selo-garantia p{
-        width: 69%;
-        text-align: right;
+    .selo-garantia {
+        --transformVal: scale(0.8);
+        transform: var(--transformVal);
+        -o-transform: var(--transformVal);
+        -ms-transform: var(--transformVal);
     }
 }
 @media screen and (max-width: 768px){
@@ -861,6 +853,14 @@ footer .bottom-footer img{
     }
     section.differs .differs-blank{
         height: 300px;
+    }
+}
+@media screen and (max-width: 590px){
+    .selo-garantia {
+        --transformVal: scale(0.6);
+        transform: var(--transformVal);
+        -o-transform: var(--transformVal);
+        -ms-transform: var(--transformVal);
     }
 }
 @media screen and (max-width: 569px){
