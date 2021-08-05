@@ -17,3 +17,8 @@ html{
 .hide{
     display: none;
 }
+.box-shadow{
+    --box-shadow-datta : 0px 0px 50px -2px rgba(0,0,0,0.08);
+    -webkit-box-shadow: var(--box-shadow-datta) ; 
+    box-shadow: var(--box-shadow-datta) ;
+}

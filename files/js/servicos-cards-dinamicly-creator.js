@@ -23,7 +23,7 @@ function appendCard(_container, _card){
 }
 const getCardHTML = (__card) =>{
     return `
-        <div class="card-single">
+        <div class="card-single box-shadow">
             <div style="margin-bottom: 30px; height: 2px; width: 100%; background-color: ${__card.color};"></div>
             <h2><b>${__card.title}</b></h2>
             <p>${__card.about}</p>

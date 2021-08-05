@@ -260,22 +260,20 @@ section.differs > div.diff-items{
 .item-single > img{
     margin-right: 10px;
 }
-
+ 
 div.tutorial-wraper{
-    height: 320px;
-    padding-top: 60px;
-}
+    padding: 30px 0;
+} 
+
 div.tutorial-wraper > h2{
     color: var(--myBlueOil);
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 20px;
 }
 div.tuto{
-    height: 100%;
-    padding: 0 2%;
-    display: flex;
-    align-items: center;
+    padding:0 2%;
 }
 div.tuto > div.tuto-single{
     padding: 8px;
@@ -283,9 +281,22 @@ div.tuto > div.tuto-single{
     width: 33.3%;
     max-width: 700px;
     display: flex;
-    align-items: start;
+    align-items: center;
     color: var(--myBlueOil);
     font-size: 15px;
+    position: relative;
+}
+.tuto-single:hover > .tuto-effect{
+    width: 65px;
+}
+.tuto-single .tuto-effect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #498eeb;
+    transition: .3s;
+    width: 0;
 }
 div.tuto > div.tuto-single > img{
     margin-right: 8px;
@@ -534,9 +545,6 @@ footer .bottom-footer img{
     width: 250px;
     margin: 10px;
     background-color: white;
-    --box-shadow-datta : 0px 0px 50px -2px rgba(0,0,0,0.08);
-    -webkit-box-shadow: var(--box-shadow-datta) ; 
-    box-shadow: var(--box-shadow-datta) ;
     color: var(--myBlueOil);
 }
 .card-single h2{
@@ -648,9 +656,7 @@ footer .bottom-footer img{
     section.differs > div.diff-items .item-single{
         margin-bottom: 10px;
     }
-    div.tutorial-wraper{
-        height: 200px;
-    }
+   
     /* ---------------- PLANOS ---------------------------------- */
     .planos .selo-garantia{
         width: 40%;
@@ -750,6 +756,19 @@ footer .bottom-footer img{
     section.differs > iframe.vid-small{
         display: block;
         position: absolute;
+    }
+    
+}
+@media screen and (max-width: 878px){
+    div.tuto > div.tuto-single{
+        float: none;
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+
+    }
+    div.tuto > div.tuto-single > img{
+        margin-right: 8px;
     }
 }
 @media screen and (max-width: 817px){
