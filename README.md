@@ -9,10 +9,7 @@
 	5. Deploy no Vercel
 	6. Inclusão do jQuery
 	7. Criada a coleção de cores base na :root usando conta gotas nos layouts de exemplo
-    
-	
-	
-    
+	    
 	# --- Desenvolvimento ---
 	
     1. Criação da pagina 'home' com flex-box e float;

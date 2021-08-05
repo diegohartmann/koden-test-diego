@@ -45,7 +45,21 @@
     cursor: pointer;
     text-decoration: none;
 }
-
+.joinButtonMobile{
+    background-color: var(--myPurple);
+    border-radius: 8px;
+    /* border: 2px solid var(--myPurple); */
+    color: white;
+    width: 120px;
+    height: 30px;
+    line-height: 20px;
+    align-content: center;
+    text-align: center;
+    font-size: var(--headerFontSize);
+    margin-left: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
 .em-andamento-tooltip{
     pointer-events: none; 
     z-index: 999;
@@ -78,7 +92,8 @@ header > img.header-logo{
     flex-shrink: 0;
     width: 135px;
 }
-header > .nav-container{
+/* ------------- PC ------------------ */
+header > .pc-nav-container{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -87,19 +102,60 @@ header > .nav-container{
     flex-shrink: 0;
     width: auto;
 }
-header > .nav-container nav ul{
+header > .pc-nav-container nav ul{
     height: 100%;
 }
-header > .nav-container nav ul li{
+header > .pc-nav-container nav ul li{
     display: inline-block;
     list-style-type: none;
     margin: 0 8px;
 }
-header > .nav-container nav ul li a{
+header > .pc-nav-container nav ul li a{
     font-size: var(--headerFontSize);
     color: var(--myBlueOil);
     text-decoration: none;
 }
+/* ------------- MOBILE ------------------ */
+header .mobile-nav-container{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: black;
+    position: relative;
+    display: none;
+}
+header .mobile-nav-container:hover > nav{
+    width: 200px;
+    height: auto;
+}
+header .mobile-nav-container nav{
+    margin: 0 auto;
+    transition: .2s;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--myBlueOilDark);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header .mobile-nav-container nav ul{
+    height: auto;
+}
+header .mobile-nav-container nav ul li{
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px;
+}
+header .mobile-nav-container nav ul li a{
+    font-size: var(--headerFontSize);
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+/*---------------------------------*/
 section.home{
     height: 745px;
     background-color: white;
@@ -153,9 +209,10 @@ section.differs > iframe.vid-med{
 }
 section.differs > iframe.vid-small{
     display: none;
+    margin: 0 auto;
     position: absolute;
-    left: 50%;
-    --transform-data: translate(-50%, -33.3%);
+     left: 50%;
+    --transform-data: translate(-50%, 15%);
             transform: var(--transform-data);
          -o-transform: var(--transform-data);
     -webkit-transform: var(--transform-data);
@@ -179,7 +236,7 @@ section.differs > div.diff-items{
     align-items: start;
     justify-content: space-between
 }
-.item-single{
+section.differs > div.diff-items .item-single{
     display: inline-flex;
     align-items: center;
     width: 25%;
@@ -189,7 +246,7 @@ section.differs > div.diff-items{
     flex-shrink: 0;
     margin-bottom: 20px;
 }
-.item-single > img{
+section.differs > div.diff-items .item-single > img{
     margin-right: 10px;
 }
 
@@ -555,7 +612,7 @@ footer .bottom-footer img{
     section.differs > h2{
         margin-bottom: 30px;
     }
-    .item-single{
+    section.differs > div.diff-items .item-single{
         margin-bottom: 10px;
     }
     section.how-works{
@@ -626,6 +683,9 @@ footer .bottom-footer img{
     .plano-single h3{
         display: none;
     }
+    section.differs > div.diff-items .item-single{
+        font-size: 13px;
+    }
     #vantagens-afiliado{
         height: 750px;
     }
@@ -637,6 +697,12 @@ footer .bottom-footer img{
     }
 }
 @media screen and (max-width: 1015px){
+     header > .pc-nav-container{
+        display: none;
+    }
+    header > .mobile-nav-container{
+        display: block;
+    }
     .servicos-two .cards-container{
         grid-template-columns: auto auto;
     }
@@ -644,7 +710,21 @@ footer .bottom-footer img{
         margin: 10px auto;
     }
 }
-
+@media screen and (max-width: 945px){
+    
+}
+@media screen and (max-width: 870px){
+    section.differs > iframe.vid-med{
+        display: none;
+    }
+    section.differs > iframe.vid-small{
+        display: block;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 768px){
+   
+}
 @media screen and (max-width: 660px){
     .servicos-two .cards-container{
         display: block;
