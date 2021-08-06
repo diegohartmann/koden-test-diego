@@ -91,7 +91,36 @@
                 <div class="cards-container">
                     <!--dinamicamente-->
                 </div><!--cards-container-->
-                <input type="submit" value="Calcule seus ganhos" class="greenButton">
+                <input id="earn-calc-button" type="submit" value="Calcule seus ganhos" class="greenButton ">
+                <div id="earn-calc-window" class="box-shadow">
+                    <div id="earn-calc-window-close">
+                        <i class="fas fa-times" style="color: white;"></i>
+                    </div><!--earn-calc-window-close-->
+                    <div class="clear"></div>
+                    <p>Sua comissão é de <b>60%</b> das vendas que você fizer.</p>
+                    <div class="form-container">
+                        <form>
+
+                            <div class="calc-input-single w33">
+                                <input value="" id="numInput" placeholder="Nº de vendas" type="number" min="0">
+                            </div><!--calc-input-single w330-->
+                            
+                            <div class="calc-input-single w33">
+                                <input value="" id="priceInput" placeholder="R$ por venda" type="number" min="0">
+                            </div><!--calc-input-single w33-->
+                            
+                            <div class="calc-input-single w33">
+                                <div id="calc-button" class="greenButton">Calcular</div>
+                            </div><!--calc-input-single w33-->
+                            <div class="clear"></div>
+
+                            <br>
+                            <p id="your-result-message"></p>
+                            <p id="total-result-message"></p>
+
+                        </form>
+                    </div><!--form-container-->
+                </div><!--earn-calc-window-->
                 <br>
                 <br>
                 <h3>QUEM JÁ ESTÁ GANHANDO DINHEIRO CONOSCO</h3>
@@ -163,6 +192,7 @@
         <script src="js/nav-anim.js"></script>
         <script src="js/vantagens-afiliado-dinamicly-creator.js"></script>
         <script src="js/servicos-cards-dinamicly-creator.js"></script>
+        <script src="js/calcular-ganhos.js"></script>
         <!--fim do body-->
     </body>
     

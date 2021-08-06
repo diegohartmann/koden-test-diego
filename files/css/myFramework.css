@@ -55,3 +55,15 @@ html{
     background-position-x: -50px;
     background-size: cover;
 }
+.w33{
+    float: left;
+    width: 33.3%;
+}
+.w50{
+    float: left;
+    width: 50%;
+}
+.w100{
+    float: none;
+    width: 100%;
+}

@@ -10,6 +10,9 @@
 	6. Inclusão do jQuery
 	7. Criada a coleção de cores base na :root usando conta gotas nos layouts de exemplo
 	    
+		
+		
+		
 	# --- Desenvolvimento ---
 	
     1. Criação da pagina 'home' com flex-box e float;
@@ -29,6 +32,16 @@
 		2.3 Estudo dos grids: sucesso, funcionando;
 		2.4 flexbox tirado do container das imagens de empresas clientes, foi implementado o display:grid --> resultado mais satisfatório
 		
+		
+	(05/08)
 	3. Media queria em todas as paginas para celular
 
 	4. Ultimo ajuiste responsivo na pagina 'afiliados' e temos uma primeira versao concluida pro teste;
+	
+	
+	
+	
+	# --- Conclusão ---> (05/08, 18:28)
+	 - Display grid aprendido. Usado em situações em que o flexbox deixava a desejar. Resultado satisfatório e será usado daqui em diante.
+	 - Para o ícone do botão do menu mobile foi utilizado o font-awesome, um jeito que eu não havia feito antes.
+	 

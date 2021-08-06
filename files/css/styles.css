@@ -544,6 +544,100 @@ footer .bottom-footer img{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+#earn-calc-window-close{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.596);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    padding-top: 1.5px;
+    padding-left: 1px;
+}
+#earn-calc-window{
+    width: 500px;
+    height: 0;
+    background-color:white;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#earn-calc-window > p{
+    margin-left: -25px;
+    color: var(--myBlueOil);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+#earn-calc-window .form-container{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+#earn-calc-window .form-container > form{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.form-container .greenButton{
+    width: 100%;
+    height: 50px;
+    /* line-height: 30px; */
+    font-size: 13px;
+}
+.form-container  .calc-input-single{
+    padding: 0 10px;
+}
+.form-container  .calc-input-single > input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--myBlueOil);
+    color: var(--myBlueOil);
+    padding: 15px;
+}
+/* -- removendo setas do input number -------------------------------- */
+
+/* Chrome, Safari, Edge, Opera */
+.form-container  .calc-input-single > input::-webkit-outer-spin-button,
+.form-container  .calc-input-single > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.form-container  .calc-input-single > input[type=number] {
+  -moz-appearance: textfield;
+}
+/*-------------------------------------------------------------------------*/
+
+.form-container  .calc-input-single > input:hover{
+    border: 1px solid var(--myGreen);
+}
+
+.form-container  .calc-input-single > input:active,
+.form-container  .calc-input-single > input:focus{
+    outline: none;
+    border: 2px solid var(--myPurple);
+}
+
+#your-result-message,
+#total-result-message{
+    width: 100%;
+    color: var(--myBlueOil);
+    text-align: left;
+    margin-left: 8px;
+}
+/*=========================================================*/
 .cards-container .card-single{
     height: 210px;
     width: 250px;
@@ -714,8 +808,6 @@ footer .bottom-footer img{
         font-size: 13px;
         width: 40%;
     }
-    /* .item-single{ */
-    /* } */
     .servicos-two .cards-container{
         grid-template-columns: auto auto auto;
     }
@@ -879,6 +971,19 @@ footer .bottom-footer img{
     section.differs .differs-blank{
         height: 300px;
     }
+
+    #earn-calc-window{
+        width: 500px;
+    }
+    
+    #earn-calc-window > p{
+        text-align: left;
+        margin-left: 30px;
+    }
+    .form-container  .calc-input-single{
+        padding: 0 5px;
+    }  
+    
 }
 @media screen and (max-width: 590px){
     .planos .selo-garantia {
@@ -922,10 +1027,39 @@ footer .bottom-footer img{
     .home-content  h2, #servicos-afiliado .home-content h2{
         font-size: 26px;
     }
+    #earn-calc-window{
+        width: 400px;
+    }
+    #earn-calc-window > p{
+        font-size: 13px;
+    }
+    /* #your-result-message,
+    #total-result-message{
+        margin-left: 10px;
+    } */
+  
 }
 @media screen and (max-width: 540px){
     .servicos-two .empresas-clientes{
         grid-template-columns:  auto;
+    }
+}
+@media screen and (max-width: 440px){
+    #earn-calc-window{
+        width: 350px;
+    }
+    
+    .form-container  .calc-input-single > input::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+    .form-container  .calc-input-single > input::-moz-placeholder {
+        font-size: 10px;
+    }
+    .form-container  .calc-input-single > input::-ms-input-placeholder {
+        font-size: 10px;
+    }
+    .form-container  .calc-input-single > input::placeholder {
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 412px){
